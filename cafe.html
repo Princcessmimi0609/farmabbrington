@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .tab {
+            overflow: hidden;
+            background-color: #f1f1f1;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        .tabcontent {
+            display: none;
+        }
+
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+
+        .menu-container {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-item {
+            margin-bottom: 20px;
+        }
+
+        .item-name {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .item-price {
+            float:inherit;
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .item-description {
+            font-style: italic;
+            color: #555;
+        }
+
+        .navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: red;
+}
+
+
+
+    </style>
+</head>
+
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="navbar">
+        <div class="nav-white" style="letter-spacing:4px;">
+            <a href="Index.html" class="navbutton">Abbington Cafe</a>
+        </div>
+        </div>
+
+    
+    </div>
+
+    <div class="tab">
+        <button class="tablinks" onclick="OpenMenu(event, 'Drinks')" id="defaultOpen">Drinks</button>
+        <button class="tablinks" onclick="OpenMenu(event, 'Eats')">Eats</button>
+    </div>
+
+    <div id="Drinks" class="tabcontent">
+        <h1>Coffee</h1>
+
+        <!-- Drink Menu items go here -->
+        <div class="menu-item">
+            <span class="item-name">Cappuccino</span>
+            <span class="item-price">£3.00</span><br>
+            <span class="item-description">Espresso and steamed milk</span>
+        </div>
+
+        <div class="menu-item">
+            <span class="item-name">Latte</span>
+            <span class="item-price">£3.00</span><br>
+            <span class="item-description">Espresso and steamed milk</span>
+        </div>
+
+        <div class="menu-item">
+            <span class="item-name">Mocha</span>
+            <span class="item-price">£4.00</span><br>
+            <span class="item-description">Espresso, steamed milk, chocolate syrup, and whipped cream</span>
+        </div>
+
+        <div class="menu-item">
+            <span class="item-name">Flat White</span>
+            <span class="item-price">£5.50</span><br>
+            <span class="item-description">Freshly baked buttery croissant</span>
+            <br>
+            <br>
+            <br>
+
+        </div>   
+        
+    <section>
+        <div id="Drinks" class="tablinks">
+            <img src="C:\Users\princ\Downloads\NPV Software Development\Project\Small Farm\image\coffee.jpg" alt="Image 2">
+        </div>
+
+    </section>
+
+
+    </div>
+
+    <div id="Eats" class="tabcontent">
+        <h1>PIZZA</h1>
+
+        <!-- Eat Menu items go here -->
+        <div class="menu-item">
+            <span class="item-name">MAGHERITA</span>
+            <span class="item-price">£12.00</span><br>
+            <span class="item-description">Fresh Tomatoes, Fresh Mozzarella, Fresh Basil</span>
+        </div>
+
+        <div class="menu-item">
+            <span class="item-name">FORMAGGIO</span>
+            <span class="item-price">£16.00</span><br>
+            <span class="item-description">FOUR CHEESES (MOZZARELLA, PARMESAN, PECORINDO, JARLSBERG)</span>
+        </div>
+
+        <div class="menu-item">
+            <span class="item-name">CHICKEN</span>
+            <span class="item-price">£20.00</span><br>
+            <span class="item-description">FRESH TOMATOES, MOZZARELLA, CHICKEN, ONIONS</span>
+        </div>
+
+        <div class="menu-item">
+            <span class="item-name">PINEAPPLE PIZZA</span>
+            <span class="item-price">£18.00</span><br>
+            <span class="item-description">FRESH TOMATOES, MOZZARELLA, FRESH PINEAPPLE, BACON, FRESH BASIL</span>
+        </div>
+
+        <div class="menu-item">
+            <span class="item-name">MEAT PIZZA</span>
+            <span class="item-price">£18.00</span><br>
+            <span class="item-description">FRESH TOMATOES, MOZZARELLA, HOT PEPPORONI, HOT SAUSAGE, BEEF, CHICKEN</span>
+        </div>
+
+        <div class="menu-item">
+            <span class="item-name">PARMA CHEESES</span>
+            <span class="item-price">£22.00</span><br>
+            <span class="item-description">FRESH TOMATOES, MOZZARELLA, PARMA, BACON, FRESH ARUGULA</span>
+        </div>
+
+        
+        <script>
+            function OpenMenu(evt, menuName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(menuName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+    
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+        </script>
+    </body>
+
+
+    <section>
+        <div id="Eats" class="tablinks">
+            <img src="C:\Users\princ\Downloads\NPV Software Development\Project\Small Farm\image\Pizza.jpg" alt="Eats">
+        </div>
+    </section>
+
+    </html>

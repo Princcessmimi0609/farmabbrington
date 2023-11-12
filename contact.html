@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://www.hdwallpapers.in/download/closeup_photo_of_white_cherry_blossoms_flowers_in_blur_background_4k_hd_nature-1920x1080.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
+    
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group textarea {
+            height: 150px;
+        }
+
+        .form-group button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background-color: #45a049;
+        }
+
+        div.a {
+        text-align: center;
+        font-size: 26px;
+        }
+        
+    </style>
+</head>
+
+<body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <div class="a">
+    <h2>Abbington Farm</h2>
+    <p>Abington, Biggar ML12 6RH<br>Tel: 01864 502501<br></p>
+    </div>
+
+
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form onsubmit="redirectToThankYouPage(); return false;">
+            <!-- Your form fields here -->
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+        
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+
+         <!-- Embedding Google Map using an iframe -->
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18092.100594308566!2d-3.686354429563612!3d55.4711635207759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48880197a7b5e041%3A0x2d782da25ff29ea5!2sBiggar%20ML12%206RH!5e0!3m2!1sen!2suk!4v1698785416619!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        </form>
+    </div>
+    
+    <script>
+        function redirectToThankYouPage() {
+            // Perform form processing logic if needed
+
+            // Redirect to the thank you page
+            window.location.href = "thank_you.html";
+        }
+    </script>
+
+</html>
