@@ -108,11 +108,19 @@
     </div>
     
     <script>
-        function redirectToThankYouPage() {
-            // Perform form processing logic if needed
+        function handleSubmit(event) {
+            // Prevent the default form submission behavior
+            event.preventDefault();
 
-            // Redirect to the thank you page
-            window.location.href = "thank_you.html";
+            // Your form processing logic goes here
+            // For demonstration purposes, let's just log the form data
+            const formData = new FormData(event.target);
+            for (let entry of formData.entries()) {
+                console.log(entry[0] + ': ' + entry[1]);
+            }
+
+            // Optionally, you can reset the form manually if needed
+            // event.target.reset();
         }
     </script>
 
