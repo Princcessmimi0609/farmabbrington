@@ -96,35 +96,18 @@
 
 
     </style>
-
-    <script>
-            function OpenMenu(evt, menuName) {
-                var i, tabcontent, tablinks;
-                tabcontent = document.getElementsByClassName("tabcontent");
-                for (i = 0; i < tabcontent.length; i++) {
-                    tabcontent[i].style.display = "none";
-                }
-                tablinks = document.getElementsByClassName("tablinks");
-                for (i = 0; i < tablinks.length; i++) {
-                    tablinks[i].className = tablinks[i].className.replace(" active", "");
-                }
-                document.getElementById(menuName).style.display = "block";
-                evt.currentTarget.className += " active";
-            }
-    
-            // Get the element with id="defaultOpen" and click on it
-            document.getElementById("defaultOpen").click();
-        </script>
-    
 </head>
 
 <body>
     <!-- Navbar (sit on top) -->
     <div class="navbar">
         <div class="nav-white" style="letter-spacing:4px;">
-            <a href="index.html" class="navbutton">Abbington Farm</a>
+            <a href="index.html" class="navbutton">Abbington Cafe</a>
         </div>
         </div>
+
+    
+    </div>
 
     <div class="tab">
         <button class="tablinks" onclick="OpenMenu(event, 'Drinks')" id="defaultOpen">Drinks</button>
@@ -160,23 +143,21 @@
             <br>
             <br>
             <br>
-        </div>   
-    </div> 
 
+        </div>   
+        
     <section>
         <div id="Drinks" class="tablinks">
             <img src="image/coffee.jpg" alt="Image 2">
         </div>
-   
-    <div>
-        
+
+    </section>
+
+
+    </div>
 
     <div id="Eats" class="tabcontent">
         <h1>PIZZA</h1>
-        
-    </div>
-
-        
 
         <!-- Eat Menu items go here -->
         <div class="menu-item">
@@ -207,22 +188,40 @@
             <span class="item-name">MEAT PIZZA</span>
             <span class="item-price">£18.00</span><br>
             <span class="item-description">FRESH TOMATOES, MOZZARELLA, HOT PEPPORONI, HOT SAUSAGE, BEEF, CHICKEN</span>
+        </div>
 
         <div class="menu-item">
             <span class="item-name">PARMA CHEESES</span>
             <span class="item-price">£22.00</span><br>
             <span class="item-description">FRESH TOMATOES, MOZZARELLA, PARMA, BACON, FRESH ARUGULA</span>
-            <br>
-            <br>
-            <br>
         </div>
 
-            <section>
-        <div id="Drinks" class="tablinks">
-             <img src="image/Pizza.jpg" alt="Eats">
-        </div>
-            
-        </div>        
         
+        <script>
+            function OpenMenu(evt, menuName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(menuName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+    
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+        </script>
     </body>
-</html>
+
+
+    <section>
+        <div id="Eats" class="tablinks">
+            <img src="image/Pizza.jpg" alt="Eats">
+        </div>
+    </section>
+
+    </html>
