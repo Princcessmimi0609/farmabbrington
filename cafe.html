@@ -96,6 +96,26 @@
 
 
     </style>
+
+    <script>
+            function OpenMenu(evt, menuName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(menuName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+    
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+        </script>
+    
 </head>
 
 <body>
@@ -153,7 +173,10 @@
 
     <div id="Eats" class="tabcontent">
         <h1>PIZZA</h1>
+         <img src="image/Pizza.jpg" alt="Eats">
     </div>
+
+        
 
         <!-- Eat Menu items go here -->
         <div class="menu-item">
@@ -184,7 +207,6 @@
             <span class="item-name">MEAT PIZZA</span>
             <span class="item-price">£18.00</span><br>
             <span class="item-description">FRESH TOMATOES, MOZZARELLA, HOT PEPPORONI, HOT SAUSAGE, BEEF, CHICKEN</span>
-        </div>
 
         <div class="menu-item">
             <span class="item-name">PARMA CHEESES</span>
@@ -195,35 +217,8 @@
             <br>
         </div>
 
-       <section>
-        <div id="Eats" class="tablinks">
-            <img src="image/Pizza.jpg" alt="Eats">
-        </div>
-    </section>
-
-
-    </section>
             
-        </div>
-
+        </div>        
         
-        <script>
-            function OpenMenu(evt, menuName) {
-                var i, tabcontent, tablinks;
-                tabcontent = document.getElementsByClassName("tabcontent");
-                for (i = 0; i < tabcontent.length; i++) {
-                    tabcontent[i].style.display = "none";
-                }
-                tablinks = document.getElementsByClassName("tablinks");
-                for (i = 0; i < tablinks.length; i++) {
-                    tablinks[i].className = tablinks[i].className.replace(" active", "");
-                }
-                document.getElementById(menuName).style.display = "block";
-                evt.currentTarget.className += " active";
-            }
-    
-            // Get the element with id="defaultOpen" and click on it
-            document.getElementById("defaultOpen").click();
-        </script>
     </body>
 </html>
