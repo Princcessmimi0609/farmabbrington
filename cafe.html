@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafe Menu</title>
@@ -92,16 +92,19 @@
 .navbar a:hover {
   background-color: red;
 }
-</style>
+
+
+
+    </style>
+</head>
 
 <body>
     <!-- Navbar (sit on top) -->
     <div class="navbar">
         <div class="nav-white" style="letter-spacing:4px;">
-            <a href="index.html" class="navbutton">Abbington Cafe</a>
+            <a href="index.html" class="navbutton">Abbington Farm</a>
         </div>
         </div>
-
 
     <div class="tab">
         <button class="tablinks" onclick="OpenMenu(event, 'Drinks')" id="defaultOpen">Drinks</button>
@@ -137,18 +140,20 @@
             <br>
             <br>
             <br>
-            </div>   
-        </div>
+        </div>   
+    	
+	<img src="image/coffee.jpg" alt="Coffee"> 
 
-        <!-- Image under the menu -->
-        <img src="image/coffee.jpg" alt="Coffee">
-
+    
+            
+        
+        
 
     <div id="Eats" class="tabcontent">
         <h1>PIZZA</h1>
     </div>
 
-    <!-- Eat Menu items go here -->
+        <!-- Eat Menu items go here -->
         <div class="menu-item">
             <span class="item-name">MAGHERITA</span>
             <span class="item-price">£12.00</span><br>
@@ -183,13 +188,14 @@
             <span class="item-name">PARMA CHEESES</span>
             <span class="item-price">£22.00</span><br>
             <span class="item-description">FRESH TOMATOES, MOZZARELLA, PARMA, BACON, FRESH ARUGULA</span>
+            <br>
+            <br>
+            <br>
         </div>
 
-         <!-- Image under the menu -->   
          <img src="image/Pizza.jpg" alt="Pizza">
-
         
-        <script>
+         <script>
         function OpenMenu(evt, menuName) {
             var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tabcontent");
@@ -207,6 +213,5 @@
         // Get the element with id="defaultOpen" and click on it
         document.getElementById("defaultOpen").click();
     </script>
- 
-</body>
+    </body>
 </html>
