@@ -143,18 +143,12 @@
             <br>
             <br>
             <br>
-
-        </div>   
-        
-    <section>
-        <div id="Drinks" class="tablinks">
-            <img src="image/coffee.jpg" alt="Image 2">
+            </div>   
         </div>
 
-    </section>
+        <!-- Image under the menu -->
+        <img src="image/coffee.jpg" alt="Coffee">
 
-
-    </div>
 
     <div id="Eats" class="tabcontent">
         <h1>PIZZA</h1>
@@ -196,32 +190,28 @@
             <span class="item-description">FRESH TOMATOES, MOZZARELLA, PARMA, BACON, FRESH ARUGULA</span>
         </div>
 
+         <!-- Image under the menu -->   
+         <img src="image/Pizza.jpg" alt="Pizza">
+
         
         <script>
-            function OpenMenu(evt, menuName) {
-                var i, tabcontent, tablinks;
-                tabcontent = document.getElementsByClassName("tabcontent");
-                for (i = 0; i < tabcontent.length; i++) {
-                    tabcontent[i].style.display = "none";
-                }
-                tablinks = document.getElementsByClassName("tablinks");
-                for (i = 0; i < tablinks.length; i++) {
-                    tablinks[i].className = tablinks[i].className.replace(" active", "");
-                }
-                document.getElementById(menuName).style.display = "block";
-                evt.currentTarget.className += " active";
+        function OpenMenu(evt, menuName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
             }
-    
-            // Get the element with id="defaultOpen" and click on it
-            document.getElementById("defaultOpen").click();
-        </script>
-    </body>
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
 
-
-    <section>
-        <div id="Eats" class="tablinks">
-            <img src="image/Pizza.jpg" alt="Eats">
-        </div>
-    </section>
-
-    </html>
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+ 
+</body>
+</html>
