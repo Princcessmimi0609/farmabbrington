@@ -5,260 +5,256 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">↩
     <title>Farm shop order list</title>↩
 ↩
-<style>↩
-    .navbar {↩
-        overflow: hidden;↩
-        background-color: #333;↩
-    }↩
+<style>
+    .navbar {
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    .navbar a {
+    float: left;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+
+    .navbar a:hover {
+    background-color: red;  
+    }
+
+    .horizontal-list .listing-list-item {
+        display: inline-block;
+        margin-right: 20px; /* Add margin between list items for spacing */
+        margin-top:20px;
+    }
+
+    .listing-list-item {
+        block-size: 0 0 auto;
+        margin-right: 20px;
+        background-color: #f1f1f1;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .listing-list-item:last-child {
+        margin-right: 20px;
+    }
+
+    .price {
+        text-decoration: line-through;
+    }
+</style>
 ↩
-    .navbar a {↩
-    float: left;↩
-    font-size: 24px;↩
-    color: white;↩
-    text-align: center;↩
-    padding: 14px 16px;↩
-    text-decoration: none;↩
-    }↩
-↩
-    .navbar a:hover {↩
-    background-color: red;  ↩
-    }↩
-↩
-    .horizontal-list .listing-list-item {↩
-        display: inline-block;↩
-        margin-right: 20px; /* Add margin between list items for spacing */↩
-        margin-top:20px;↩
-    }↩
-↩
-    .listing-list-item {↩
-        block-size: 0 0 auto;↩
-        margin-right: 20px;↩
-        background-color: #f1f1f1;↩
-        padding: 20px;↩
-        border-radius: 8px;↩
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);↩
-    }↩
-↩
-    .listing-list-item:last-child {↩
-        margin-right: 20px;↩
-    }↩
-↩
-    .price {↩
-        text-decoration: line-through;↩
-    }↩
-</style>↩
-↩
-<!-- Navbar (sit on top) -->↩
-<div class="navbar">↩
-    <div class="nav-white" style="letter-spacing:4px;">↩
-        <a href="index.html" class="navbutton">Abbington Farm</a>↩
-    </div>↩
-    </div>↩
-↩
-↩
-<div class="horizontal-list">↩
-    <div class="listing-list-item">↩
-        <div class="listing-list-item__box">↩
-            <img src="image/assorted-homemake-cake.jpg" alt="cakes" class="product-image">↩
-        </div>↩
-        <div class="listing-list-item__details">↩
-            <h2>Assorted Homemake Cake</h2>↩
-            <p class="product-description">Freshly Homemake Cakes</p>↩
-            <div class="product-price">↩
-                <span class="price">Price: £3.00/each</span>↩
-                <span class="discounted-price">Sale Price: £2.00/each</span>↩
-            </div>↩
-        </div>↩
-    </div>↩
-</div>↩
-↩
-    <div class="listing-list-item">↩
-        <div class="listing-list-item__box">↩
-            <img src="image/free-range-eggs.jpg" alt="Eggs" class="product-image">↩
-        </div>↩
-        <div class="listing-list-item__details">↩
-            <h2>Free-range Eggs</h2>↩
-            <p class="product-description">Freshly Free-Range-Eggs</p>↩
-            <div class="product-price">↩
-                <span class="price">Price: £24.99/dozen</span>↩
-                <span class="discounted-price">Sale Price: £19.99/dozen</span>↩
-            </div>↩
-        </div>↩
-    </div>↩
-↩
-    <div class="listing-list-item">↩
-        <div class="listing-list-item__box">↩
-            <img src="image/farmmilk.jpg" alt="milk" class="product-image">↩
-        </div>↩
-        <div class="listing-list-item__details">↩
-            <h2>Fram Milk</h2>↩
-            <p class="product-description">Fresh Highland milk</p>↩
-            <div class="product-price">↩
-                <span class="price">Price: £10.00/bottle</span>↩
-                <span class="discounted-price">Sale Price: $8.00/bottle</span>↩
-            </div>↩
-        </div>↩
-    </div>↩
-↩
-    <div class="listing-list-item">↩
-        <div class="listing-list-item__box">↩
-            <img src="image/Organic%20tomatoes.jpg" alt="tomatoes" class="product-image">↩
-        </div>↩
-        <div class="listing-list-item__details">↩
-            <h2>Organic Tomatoes</h2>↩
-            <p class="product-description">Freshly Organic Tomatoes</p>↩
-            <div class="product-price">↩
-                <span class="price">Price: £15.99/kg</span>↩
-                <span class="discounted-price">Sale Price: £12.99/kg</span>↩
-            </div>↩
-        </div>↩
-    </div>↩
-↩
-↩
-    <div class="listing-list-item">↩
-        <div class="listing-list-item__box">↩
-        <img src="image/Carrot.jpg" alt="Organic Carrot" class="product-image">↩
-    </div>↩
-    <div class="listing-list-item__details">↩
-        <h2>Organic Carrot</h2>↩
-        <p class="product-description">Freshly Organic Carrot</p>↩
-        <div class="product-price">↩
-            <span class="price">Price: £10.00/kg</span>↩
-            <span class="discounted-price">Sale Price: £7.99/kg</span>↩
-           </div>↩
-        </div>↩
-    </div>↩
-↩
-↩
-    <div class="listing-list-item">↩
-        <div class="listing-list-item__box">↩
-        <img src="image/organic%20pototoes.jpg" alt="organic pototoes" class="product-image">↩
-    </div>↩
-    <div class="listing-list-item__details">↩
-        <h2>Organic Potatoes</h2>↩
-        <p class="product-description">Freshly Organic Potatoes</p>↩
-        <div class="product-price">↩
-        <span class="price">Price: £15.99/kg</span>↩
-        <span class="discounted-price">Sale Price: £10.99/kg</span>↩
-        </div>↩
-    </div>↩
-</div>↩
-↩
-    <div class="listing-list-item">↩
-        <div class="listing-list-item__box">↩
-        <img src="image/mushrooms.jpg" alt="organic mushrooms" class="product-image">↩
-    </div>↩
-    <div class="listing-list-item__details">↩
-        <h2>Organic Mushrooms</h2>↩
-        <p class="product-description">Freshly Organic Mushrooms</p>↩
-        <div class="product-price">↩
-        <span class="price">Price: £10.00/kg</span>↩
-        <span class="discounted-price">Sale Price: £7.99/kg</span>↩
-        </div>↩
-    </div>↩
-</div>↩
-↩
-    <div class="listing-list-item">↩
-        <div class="listing-list-item__box">↩
-        <img src="image/Organic%20Strawberries.jpg" alt="organic Strawberries" class="product-image">↩
-    </div>↩
-    <div class="listing-list-item__details">↩
-        <h2>Organic Strawberries</h2>↩
-        <p class="product-description">Freshly Organic Strawberries</p>↩
-        <div class="product-price">↩
-        <span class="price">Price: £34.99/kg</span>↩
-        <span class="discounted-price">Sale Price: £29.99/kg</span>↩
-        </div>↩
-    </div>↩
-</div>↩
-↩
-    <div class="listing-list-item">↩
-        <div class="listing-list-item__box">↩
-        <img src="image/Blackberry.jpg" alt="organic blackberry" class="product-image">↩
-    </div>↩
-    <div class="listing-list-item__details">↩
-        <h2>Organic Blackberry</h2>↩
-        <p class="product-description">Freshly Organic Blackberries</p>↩
-        <div class="product-price">↩
-        <span class="price">Price: £34.99/kg</span>↩
-        <span class="discounted-price">Sale Price: £29.99/kg</span>↩
-        </div>↩
-    </div>↩
-</div>↩
-↩
-    <div class="listing-list-item">↩
-        <div class="listing-list-item__box">↩
-        <img src="image/Apricot.jpg" alt="organic Apricot" class="product-image">↩
-    </div>↩
-    <div class="listing-list-item__details">↩
-        <h2>Organic Apricot</h2>↩
-        <p class="product-description">Freshly Organic Apricot</p>↩
-        <div class="product-price">↩
-        <span class="price">Price: £25.99/kg</span>↩
-        <span class="discounted-price">Sale Price: £20.99/kg</span>↩
-        </div>↩
-    </div>↩
-</div>↩
-↩
-    <div class="listing-list-item">↩
-        <div class="listing-list-item__box">↩
-        <img src="image/honey.jpg" alt="honey" class="product-image">↩
-    </div>↩
-    <div class="listing-list-item__details">↩
-        <h2>Organic Honey</h2>↩
-        <p class="product-description">Freshly Organic Honey</p>↩
-        <div class="product-price">↩
-        <span class="price">Price: £30.00/bottle</span>↩
-        <span class="discounted-price">Sale Price: £25.99/bottle</span>↩
-        </div>↩
-    </div>↩
-</div>↩
-↩
-    <div class="listing-list-item">↩
-        <div class="listing-list-item__box">↩
-        <img src="image/marmalade.jpg" alt="marmalade" class="product-image">↩
-    </div>↩
-    <div class="listing-list-item__details">↩
-        <h2>Organic marmalade</h2>↩
-        <p class="product-description">Freshly Organic Marmalade</p>↩
-        <div class="product-price">↩
-        <span class="price">Price: £30.00/bottle</span>↩
-        <span class="discounted-price">Sale Price: £25.99/bottle</span>↩
-        </div>↩
-    </div>↩
-</div>↩
-↩
-↩
-    <div class="listing-list-item">↩
-        <div class="listing-list-item__box">↩
-        <img src="image/homemade-chocolate.jpg" alt="homemade-chocolate" class="product-image">↩
-    </div>↩
-    <div class="listing-list-item__details">↩
-        <h2>Organic Homemade Chocolate</h2>↩
-        <p class="product-description">Freshly Homemade Chocolate</p>↩
-        <div class="product-price">↩
-        <span class="price">Price: £10.00/kg</span>↩
-        <span class="discounted-price">Sale Price: £8.99/kg</span>↩
-        </div>↩
-    </div>↩
-</div>↩
-↩
-    <div class="listing-list-item">↩
-        <div class="listing-list-item__box">↩
-        <img src="image/Carrot.jpg" alt="carrot" class="product-image">↩
-    </div>↩
-    <div class="listing-list-item__details">↩
-        <h2>Orangic Carrot Juice</h2>↩
-        <p class="product-description">Freshly Squeeze Carrot Juice</p>↩
-        <div class="product-price">↩
-        <span class="price">Price: £7.00/cup</span>↩
-        <span class="discounted-price">Sale Price: £4.99/kg</span>↩
-        </div>↩
-    </div>↩
-</div>↩
-↩
-↩
-↩
-↩
-</body>↩
+<!-- Navbar (sit on top) -->
+<div class="navbar">
+    <div class="nav-white" style="letter-spacing:4px;">
+        <a href="Index.html" class="navbutton">Abbington Farm</a>
+    </div>
+    </div>
+
+
+<div class="horizontal-list">
+    <div class="listing-list-item">
+        <div class="listing-list-item__box">
+            <img src="image/assorted-homemake-cake.jpg" alt="cakes" class="product-image">
+        </div>
+        <div class="listing-list-item__details">
+            <h2>Assorted-homemake Cake</h2>
+            <p class="product-description">Freshly Homemake Cakes</p>
+            <div class="product-price">
+                <span class="price">Price: £3.00/each</span>
+                <span class="discounted-price">Sale Price: £2.00/each</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="listing-list-item">
+        <div class="listing-list-item__box">
+            <img src="image/free-range-eggs.jpg" alt="Eggs" class="product-image">
+        </div>
+        <div class="listing-list-item__details">
+            <h2>Free-range Eggs</h2>
+            <p class="product-description">Freshly Free-Range-Eggs</p>
+            <div class="product-price">
+                <span class="price">Price: £24.99/dozen</span>
+                <span class="discounted-price">Sale Price: £19.99/dozen</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="listing-list-item">
+        <div class="listing-list-item__box">
+            <img src="image/farmmilk.jpg" alt="milk" class="product-image">
+        </div>
+        <div class="listing-list-item__details">
+            <h2>Farm Milk</h2>
+            <p class="product-description">Fresh Highland milk</p>
+            <div class="product-price">
+                <span class="price">Price: £10.00/bottle</span>
+                <span class="discounted-price">Sale Price: $8.00/bottle</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="listing-list-item">
+        <div class="listing-list-item__box">
+            <img src="image/Organic%20tomatoes.jpg" alt="tomatoes" class="product-image">
+        </div>
+        <div class="listing-list-item__details">
+            <h2>Organic Tomatoes</h2>
+            <p class="product-description">Freshly Organic Tomatoes</p>
+            <div class="product-price">
+                <span class="price">Price: £15.99/kg</span>
+                <span class="discounted-price">Sale Price: £12.99/kg</span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="listing-list-item">
+        <div class="listing-list-item__box">
+        <img src="image/Carrot.jpg" alt="Organic Carrot" class="product-image">
+    </div>
+    <div class="listing-list-item__details">
+        <h2>Organic Carrot</h2>
+        <p class="product-description">Freshly Organic Carrot</p>
+        <div class="product-price">
+            <span class="price">Price: £10.00/kg</span>
+            <span class="discounted-price">Sale Price: £7.99/kg</span>
+           </div>
+        </div>
+    </div>
+
+
+    <div class="listing-list-item">
+        <div class="listing-list-item__box">
+        <img src="image/organic%20pototoes.jpg" alt="organic pototoes" class="product-image">
+    </div>
+    <div class="listing-list-item__details">
+        <h2>Organic Potatoes</h2>
+        <p class="product-description">Freshly Organic Potatoes</p>
+        <div class="product-price">
+        <span class="price">Price: £15.99/kg</span>
+        <span class="discounted-price">Sale Price: £10.99/kg</span>
+        </div>
+    </div>
+</div>
+
+    <div class="listing-list-item">
+        <div class="listing-list-item__box">
+        <img src="image/mushrooms.jpg" alt="organic mushrooms" class="product-image">
+    </div>
+    <div class="listing-list-item__details">
+        <h2>Organic Mushrooms</h2>
+        <p class="product-description">Freshly Organic Mushrooms</p>
+        <div class="product-price">
+        <span class="price">Price: £10.00/kg</span>
+        <span class="discounted-price">Sale Price: £7.99/kg</span>
+        </div>
+    </div>
+</div>
+
+    <div class="listing-list-item">
+        <div class="listing-list-item__box">
+        <img src="image\Organic%20Strawberries.jpg" alt="organic Strawberries" class="product-image">
+    </div>
+    <div class="listing-list-item__details">
+        <h2>Organic Strawberries</h2>
+        <p class="product-description">Freshly Organic Strawberries</p>
+        <div class="product-price">
+        <span class="price">Price: £34.99/kg</span>
+        <span class="discounted-price">Sale Price: £29.99/kg</span>
+        </div>
+    </div>
+</div>
+
+    <div class="listing-list-item">
+        <div class="listing-list-item__box">
+        <img src="image/Blackberry.jpg" alt="organic blackberry" class="product-image">
+    </div>
+    <div class="listing-list-item__details">
+        <h2>Organic Blackberry</h2>
+        <p class="product-description">Freshly Organic Blackberries</p>
+        <div class="product-price">
+        <span class="price">Price: £34.99/kg</span>
+        <span class="discounted-price">Sale Price: £29.99/kg</span>
+        </div>
+    </div>
+</div>
+
+    <div class="listing-list-item">
+        <div class="listing-list-item__box">
+        <img src="image/Apricot.jpg" alt="organic Apricot" class="product-image">
+    </div>
+    <div class="listing-list-item__details">
+        <h2>Organic Apricot</h2>
+        <p class="product-description">Freshly Organic Apricot</p>
+        <div class="product-price">
+        <span class="price">Price: £25.99/kg</span>
+        <span class="discounted-price">Sale Price: £20.99/kg</span>
+        </div>
+    </div>
+</div>
+
+    <div class="listing-list-item">
+        <div class="listing-list-item__box">
+        <img src="image/honey.jpg" alt="honey" class="product-image">
+    </div>
+    <div class="listing-list-item__details">
+        <h2>Organic Honey</h2>
+        <p class="product-description">Freshly Organic Honey</p>
+        <div class="product-price">
+        <span class="price">Price: £30.00/bottle</span>
+        <span class="discounted-price">Sale Price: £25.99/bottle</span>
+        </div>
+    </div>
+</div>
+
+    <div class="listing-list-item">
+        <div class="listing-list-item__box">
+        <img src="image/marmalade.jpg" alt="marmalade" class="product-image">
+    </div>
+    <div class="listing-list-item__details">
+        <h2>Organic marmalade</h2>
+        <p class="product-description">Freshly Organic Marmalade</p>
+        <div class="product-price">
+        <span class="price">Price: £30.00/bottle</span>
+        <span class="discounted-price">Sale Price: £25.99/bottle</span>
+        </div>
+    </div>
+</div>
+
+
+    <div class="listing-list-item">
+        <div class="listing-list-item__box">
+        <img src="image/homemade-chocolate.jpg" alt="homemade-chocolate" class="product-image">
+    </div>
+    <div class="listing-list-item__details">
+        <h2>Organic Homemade Chocolate</h2>
+        <p class="product-description">Freshly Homemade Chocolate</p>
+        <div class="product-price">
+        <span class="price">Price: £10.00/kg</span>
+        <span class="discounted-price">Sale Price: £8.99/kg</span>
+        </div>
+    </div>
+</div>
+
+    <div class="listing-list-item">
+        <div class="listing-list-item__box">
+        <img src="image/Carrot.jpg" alt="carrot" class="product-image">
+    </div>
+    <div class="listing-list-item__details">
+        <h2>Orangic Carrot Juice</h2>
+        <p class="product-description">Freshly Squeeze Carrot Juice</p>
+        <div class="product-price">
+        <span class="price">Price: £7.00/cup</span>
+        <span class="discounted-price">Sale Price: £4.99/kg</span>
+        </div>
+    </div>
+</div>
+
+</body>
 </html>
