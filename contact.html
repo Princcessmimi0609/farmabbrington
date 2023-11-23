@@ -6,77 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-image: url('https://www.hdwallpapers.in/download/closeup_photo_of_white_cherry_blossoms_flowers_in_blur_background_4k_hd_nature-1920x1080.jpg');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: center;
-            margin: 0; /* Remove default margin */
-            padding: 0; /* Remove default padding */
-        }
-
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Drop shadow */
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group label {
-            display: block;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-
-        .form-group input[type="text"],
-        .form-group input[type="email"],
-        .form-group textarea {
-            width: 100%;
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box; /* Include padding and border in width calculation */
-        }
-
-        .form-group textarea {
-            height: 150px;
-        }
-
-        .form-group button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        .form-group button:hover {
-            background-color: #45a049;
-        }
-
-        .success-message {
-            display: none;
-            text-align: center;
-            font-size: 20px;
-            color: #4CAF50;
-        }
-
-        div.a {
-            text-align: center;
-            font-size: 26px;
-            color: white;
-            margin-top: 20px;
-        }
+        /* Your existing styles here */
     </style>
 </head>
 
@@ -89,15 +19,14 @@
 
     <div class="container" id="contact-form-container">
         <h2>Contact Us</h2>
-        <form target="_blank" 
-        action="https://formsubmit.co/princcessmimi1@outlook.com" method="POST">
+        <form id="contact-form" action="https://formsubmit.co/princcessmimi1@outlook.com" method="POST">
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" name="name" class="formsubmit" placeholder="Name" required>
             </div>
             <div class="form-group">
                 <label for="email">Email:</label>
-                <input type="email" name="email" class="formatsubmit" placeholder="Email Address" required>
+                <input type="email" name="_replyto" class="formsubmit" placeholder="Email Address" required="">
             </div>
             <div class="form-group">
                 <label for="message">Message:</label>
@@ -105,19 +34,15 @@
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-lg btn-dark btn-block">Submit</button>
-            
-            <div class="form-group">
-                <input type="hidden" name="_autoresponse" class="formatsubmit" value="your custom message">
             </div>
-
             <div class="form-group">
-                <input type="email" name="email" class="formatsubmit" placeholder="Email Address">
+                <input type="hidden" name="_autoresponse" class="formatsubmit" value="">
             </div>
         </form>
 
         <!-- Success message (hidden initially) -->
         <div class="success-message" id="success-message">
-            <p>Thank you for your message! We'll get back to you soon.</p>
+            <p>We received your message and will get back to you as soon as possible.</p>
         </div>
 
         <!-- Embedding Google Map using an iframe -->
@@ -125,6 +50,7 @@
     </div>
 
     
+
 </body>
 
 </html>
